@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "python-weekend-ba-task"
+version = "0.1.0"
+description = "Python weekend task"
+authors = ["Miroslav Mlynárik <miroslav.mlynarik@simplity.eu>"]
+license = "BSD"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+numpy = "^1.21.1"
+scipy = "^1.7.1"
+ray = {extras = ["default"], version = "^1.5.1"}
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.910"
+pycodestyle = "^2.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
